@@ -13,11 +13,11 @@ set -e # exit once any command fails
 {
     date
 
-    docker image ls | grep local-registry:5000/pinger | grep latest
+    status=$(docker images --format "table {{.Repository}}\t{{.Tag}}" | grep 'ubuntu'| grep 20.04 | grep -c '.')
 
-    curl http://local-registry:5000/v2/pinger/tags/list -k | grep pinger | grep latest
-
-    rm /tmp/curl || true
+    if [ $status != 0 ]; then
+        fail
+    fi
 
 } >> ${LOGFILE} 2>&1
 

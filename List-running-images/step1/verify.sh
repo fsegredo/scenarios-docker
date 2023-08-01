@@ -13,7 +13,7 @@ set -e # exit once any command fails
 {
     date
 
-    docker image ls | grep ubuntu
+    docker images --format "table {{.Repository}}\t{{.Tag}}" | grep 'ubuntu'| grep 20.04
 
 } >> ${LOGFILE} 2>&1
 
