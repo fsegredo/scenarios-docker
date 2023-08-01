@@ -1,5 +1,6 @@
 
-List all the images on the docker host
+`Pull` ubuntu image
+* verion 20.04
 
 
 <br>
@@ -18,16 +19,17 @@ Image: Binary file which includes all data/requirements to be run as a Container
 
 
 <br>
-<details><summary>Solution</summary>
+<details>
+<summary>Solution</summary>
 <br>
 
 <br>
 ```plain
-docker images
-docker image ls
-```
-<br>
 
-{{exec}}
+docker pull ubuntu:20.04
+
+```{{exec}}
+
+<br>
 
 </details>

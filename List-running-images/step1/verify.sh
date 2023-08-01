@@ -13,8 +13,7 @@ set -e # exit once any command fails
 {
     date
 
-    docker image ls | grep pinger
-    docker ps | grep my-ping
+    docker image ls | grep ubuntu
 
 } >> ${LOGFILE} 2>&1
 
