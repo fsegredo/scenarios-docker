@@ -1,16 +1,16 @@
 
-Run a container with the name dockly
-* use `nginx` as your image
-* must be acessible on port 8081
-
-
+List all the images on the docker host
 
 
 <br>
 <details><summary>Info</summary>
 <br>
 
-Testing
+```plain
+
+Image: Binary file which includes all data/requirements to be run as a Container
+
+
 ```
 
 </details>
@@ -22,7 +22,12 @@ Testing
 <br>
 
 <br>
+```plain
+docker images
+docker image ls
+```
+<br>
 
-testing
+{{exec}}
 
 </details>
