@@ -14,7 +14,8 @@ set -e # exit once any command fails
     date
 
     status=$(docker images --format "table {{.Repository}}\t{{.Tag}}" | grep 'ubuntu'| grep 20.04 | grep -c '.')
-    
+     echo $status
+     
     if [ $status != 0 ];
     then 
         false
