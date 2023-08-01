@@ -9,9 +9,14 @@
     },
     "steps": [
       {
-        "title": "List images on docker host ",
+        "title": "Let's work with docker images!",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Let's work with docker images!",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ],
     "assets": {
